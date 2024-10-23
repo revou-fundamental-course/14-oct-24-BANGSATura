@@ -15,12 +15,6 @@ const day = today.getDate();
 const month = today.getMonth()+1;
 const year = today.getFullYear();
 
-// console.log(time);
-
-
-// console.log(day, month, year);
-// console.log(tglLahir.value.Date());
-
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
     document.getElementById("currentDate").innerHTML = day+" - ";
@@ -35,20 +29,7 @@ form.addEventListener("submit", (e)=>{
     for (let i = 0; i <= gender.length; i++) {
         if(gender[i].checked){
             document.getElementById("jKelamin").innerHTML = gender[i].value;
-            // console.log(gender);
         }
         
     }
-    
-    
-    
-    
-    // for(i = 0; i<gender.length; i++){
-    //     if(gender[i].checked){
-    //         document.getElementById("jKelamain").innerHTML = gender[i].value;
-    //     }
-    // }
-    // if (namaUser.value === "") {
-    //     alert("isi yang lengkap ya");
-    // }
 })
