@@ -15,6 +15,10 @@ header nav .iconPlace {
     align-items: center;
 }
 
+p.companyName {
+    color: #789DBC;
+}
+
 header nav .iconPlace .companyName {
     text-transform: uppercase;
     font-weight: bolder;
@@ -231,4 +235,79 @@ main .isiKonten {
     padding-left: 2rem;
 }
 
+@media only screen and (max-width: 412px) {
+   header nav, header nav ul, header nav .iconPlace {
+    flex-direction: column;
+   }
 
+   header nav .iconPlace .companyName {
+    margin-left: 0;
+    margin-top: 0.8rem;
+    font-size: 1em;
+   }
+
+   header nav .iconPlace {
+    margin-bottom: 1rem;
+   }
+
+   main section.bagianBanner h1, main section.bagianBanner p {
+    font-size: 1.3em;
+    text-align: center;
+   }
+
+   #tentangKami, #layananKami {
+    padding-left: 2rem;
+    padding-right: 2rem;
+   }
+
+   #tentangKami .isiKonten {
+    flex-direction: column;
+   }
+
+   #tentangKami .isiKonten .paragraf {
+    font-size: 0.9em;
+    margin-left: 0;
+   }
+
+   #visiMisi .visiPerusahaan{
+    flex-direction: column;
+    justify-content: center;
+   }
+
+   #visiMisi .visiPerusahaan .paragraf {
+    margin-right: 0;
+    margin-bottom: 1rem;
+   }
+
+   #visiMisi .visiPerusahaan .gambar img {
+    width: 20rem;
+   }
+
+   #layananKami .card {
+    flex-direction: column;
+   }
+
+   #layananKami .bagianOdd .bagianText {
+    padding-right: 0;
+    padding-bottom: 1rem;
+   }
+
+   #layananKami .bagianEven .bagianText {
+    padding-left: 0;
+    padding-bottom: 1rem;
+   }
+
+   #layananKami .bagianGambar img {
+    width: 23rem;
+    height: 16rem;
+   }
+
+   #kirimPesan .isiKonten {
+        flex-direction: column;
+        padding: 2rem;
+   }
+
+   #kirimPesan .isiKonten table textarea {
+        width: 17rem;
+   }
+}
